@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapache-svc
+  labels:
+    app: myapache
+spec:
+   type: NodePort
+   ports:
+   - port: 8080
+     nodePort: 30001
+     protocol: TCP
+   selector:
+     app: myapache
