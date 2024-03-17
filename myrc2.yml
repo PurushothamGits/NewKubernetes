@@ -15,4 +15,4 @@ spec:
         - name: myapache-container
           image: ubuntu/apache2
           ports:
-            - containerPort: 8080        
+            - containerPort: 80        
