@@ -6,13 +6,13 @@ spec:
   replicas: 2
   selector: 
     app: myapache
-template:
-  metadata: 
-    labels: 
-      app: myapache
-  spec:
-    containers: 
-      - name: myapache-container
-        image: ubuntu/apache2
-        ports:
-          - containerPort: 8080        
+  template:
+    metadata: 
+      labels: 
+        app: myapache
+    spec:
+      containers: 
+        - name: myapache-container
+          image: ubuntu/apache2
+          ports:
+            - containerPort: 8080        
